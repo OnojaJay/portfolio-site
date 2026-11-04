@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore three web tools by Onoja Agbo John.">
+  <title>Projects | Onoja Agbo John</title>
+  <link rel="icon" href="assets/monogram.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/projects.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="wrap navigation" aria-label="Main navigation">
+      <a class="identity" href="index.html"><img src="assets/monogram.svg" width="36" height="36" alt=""><span>Onoja Agbo John</span></a>
+      <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html" aria-current="page">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <header class="page-heading">
+      <p class="eyebrow"><span class="square"></span> Selected work</p>
+      <h1>Projects<span class="period">.</span></h1>
+      <p>Three small tools for keeping track of tasks, scores and study sessions. You can try each one here.</p>
+    </header>
+    <nav aria-label="Jump to a project">
+      <ul class="project-jumps">
+        <li><a href="#task-planner">Academic planner</a></li>
+        <li><a href="#score-calculator">Score calculator</a></li>
+        <li><a href="#study-timetable">Study timetable</a></li>
+      </ul>
+    </nav>
+    <div class="project-list">
+      <article class="project" id="task-planner">
+        <img class="project-art" src="assets/planner-preview.svg" width="640" height="360" alt="Illustration of a study checklist with an HTML exercise checked off">
+        <div class="project-copy">
+          <p class="eyebrow">01 / JavaScript and browser storage</p>
+          <h2>Academic planner</h2>
+          <p>A checklist for assignments and study sessions. Add a task, tick it off when you’re done, and remove it when you no longer need it.</p>
+          <a class="text-link" href="planner.html">Open the planner <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="project" id="score-calculator">
+        <img class="project-art" src="assets/scores-preview.svg" width="640" height="360" alt="Illustration of a score calculator showing a 75 percent average">
+        <div class="project-copy">
+          <p class="eyebrow">02 / Forms and calculations</p>
+          <h2>Score calculator</h2>
+          <p>Enter three equally weighted percentage scores to find their average. For example, 60, 75 and 90 give an average of 75%.</p>
+          <details class="demo">
+            <summary>Try the calculator</summary>
+            <form id="score-form">
+              <div class="score-fields">
+                <label>Score 1 <input name="score" type="number" min="0" max="100" step="any" required></label>
+                <label>Score 2 <input name="score" type="number" min="0" max="100" step="any" required></label>
+                <label>Score 3 <input name="score" type="number" min="0" max="100" step="any" required></label>
+              </div>
+              <button class="button" type="submit">Calculate</button>
+              <output id="score-result" aria-live="polite"></output>
+            </form>
+          </details>
+        </div>
+      </article>
+      <article class="project" id="study-timetable">
+        <img class="project-art" src="assets/timetable-preview.svg" width="640" height="360" alt="Illustration of a weekly study timetable with time and activity columns">
+        <div class="project-copy">
+          <p class="eyebrow">03 / Tables and filtering</p>
+          <h2>Study timetable</h2>
+          <p>A weekly timetable with sample study sessions. Choose a day to see what’s on the schedule.</p>
+          <details class="demo">
+            <summary>Open the timetable</summary>
+            <label for="day-filter">Show sessions for</label>
+            <select id="day-filter">
+              <option value="all">All days</option><option>Monday</option><option>Wednesday</option><option>Friday</option>
+            </select>
+            <table>
+              <caption>Sample study sessions</caption>
+              <thead><tr><th scope="col">Day</th><th scope="col">Time</th><th scope="col">Activity</th></tr></thead>
+              <tbody>
+                <tr><td>Monday</td><td>6:00 pm</td><td>HTML practice</td></tr>
+                <tr><td>Wednesday</td><td>6:30 pm</td><td>CSS layouts</td></tr>
+                <tr><td>Friday</td><td>5:00 pm</td><td>JavaScript revision</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </div>
+      </article>
+    </div>
+    <section class="walkthrough" aria-labelledby="walkthrough-title">
+      <div>
+        <p class="eyebrow">A QUICK WALKTHROUGH</p>
+        <h2 id="walkthrough-title">Three tools in 15 seconds</h2>
+        <p>A silent tour of the planner, calculator and timetable.</p>
+        <details class="demo">
+          <summary>Read the transcript</summary>
+          <ol><li>Add a task in the planner. Tick it off once it’s done.</li><li>Enter three scores to calculate their average.</li><li>Choose a day to see its study sessions.</li></ol>
+        </details>
+      </div>
+      <video controls preload="none" poster="assets/walkthrough-poster.png" width="640" height="360" aria-label="Silent walkthrough of the three projects">
+        <source src="assets/project-walkthrough.mp4" type="video/mp4">
+        <a href="assets/project-walkthrough.mp4">Download the walkthrough video</a>
+      </video>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><p>Onoja Agbo John</p><p>Personal portfolio</p></div>
+  </footer>
+</body>
+</html>

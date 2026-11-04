@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prepare and download a message for Onoja Agbo John.">
+  <title>Contact | Onoja Agbo John</title>
+  <link rel="icon" href="assets/monogram.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="wrap navigation" aria-label="Main navigation">
+      <a class="identity" href="index.html"><img src="assets/monogram.svg" width="36" height="36" alt=""><span>Onoja Agbo John</span></a>
+      <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <header class="page-heading">
+      <p class="eyebrow"><span class="square"></span> Get in touch</p>
+      <h1>Contact<span class="period">.</span></h1>
+      <p>Write a note, check your details, and save a copy to share. The form keeps your draft in this tab.</p>
+    </header>
+    <section class="form-panel" aria-labelledby="message-heading">
+      <h2 id="message-heading">Write a message</h2>
+      <form id="contact-form" novalidate>
+        <div class="contact-grid">
+          <div class="field">
+            <label for="full-name">Name</label>
+            <input id="full-name" name="name" required maxlength="100" autocomplete="name" aria-describedby="full-name-error">
+            <small id="full-name-error" class="error"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required maxlength="254" autocomplete="email" aria-describedby="email-error">
+            <small id="email-error" class="error"></small>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" inputmode="numeric" pattern="[0-9]+" required maxlength="20" autocomplete="tel" aria-describedby="phone-hint phone-error">
+            <small id="phone-hint" class="hint">Use digits only, without spaces or a + sign.</small>
+            <small id="phone-error" class="error"></small>
+          </div>
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required maxlength="2000" aria-describedby="message-error"></textarea>
+            <small id="message-error" class="error"></small>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <button class="button" type="submit" disabled>Check message <span aria-hidden="true">→</span></button>
+          <a class="text-link" id="download-draft" download="message-for-john.txt" hidden>Download draft <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="notice" id="contact-status" role="status"></p>
+      </form>
+      <noscript><p>Turn on JavaScript to check the form.</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><p>Onoja Agbo John</p><p>Personal portfolio</p></div>
+  </footer>
+</body>
+</html>

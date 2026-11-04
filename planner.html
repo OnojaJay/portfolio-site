@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Keep track of assignments, study sessions and to-dos in your browser.">
+  <title>Planner | Onoja Agbo John</title>
+  <link rel="icon" href="assets/monogram.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/planner.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="wrap navigation" aria-label="Main navigation">
+      <a class="identity" href="index.html"><img src="assets/monogram.svg" width="36" height="36" alt=""><span>Onoja Agbo John</span></a>
+      <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <header class="page-heading">
+      <p class="eyebrow"><span class="square"></span> Study tools</p>
+      <h1>Academic planner<span class="period">.</span></h1>
+      <p>Use this list for assignments, revision or anything you need to get done. Your tasks are saved in this browser.</p>
+    </header>
+    <section class="form-panel" aria-labelledby="tasks-heading">
+      <h2 id="tasks-heading">My tasks</h2>
+      <form id="task-form">
+        <label for="task-name">New task</label>
+        <div class="inline-form">
+          <input id="task-name" name="task" placeholder="e.g. Finish the CSS exercise" required maxlength="120">
+          <button class="button" type="submit">Add task <span aria-hidden="true">+</span></button>
+        </div>
+      </form>
+      <p class="notice" id="storage-notice" role="status" hidden></p>
+      <div class="task-heading"><h3>Task list</h3><p id="task-count" aria-live="polite"></p></div>
+      <p class="empty" id="task-empty">Your list is empty. Add a task to get started.</p>
+      <ul class="task-list" id="task-list"></ul>
+      <noscript><p>Turn on JavaScript to use the planner.</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><p>Onoja Agbo John</p><p>Personal portfolio</p></div>
+  </footer>
+</body>
+</html>
